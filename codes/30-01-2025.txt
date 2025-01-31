@@ -1,0 +1,6 @@
+for (i=0;i<=51;i++){
+	if (i%5==0){
+		console.log(i)
+	}
+}
+//print 5 to 50. 
