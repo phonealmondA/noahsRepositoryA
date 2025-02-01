@@ -1,0 +1,7 @@
+i = 0;
+while(i<=400){
+if(i%20==0){
+console.log(i);
+}
+i++;
+}
