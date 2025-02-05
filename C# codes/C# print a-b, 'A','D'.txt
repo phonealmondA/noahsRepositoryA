@@ -1,0 +1,39 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        loopABC(1,10, 'A');
+        loopABC(0,10, 'D');
+        
+    }
+    public static void loopABC(int a, int b, char c)
+    {
+        if (c=='A'){
+        printLn("accending");
+            for (int i=a; i<=b; i++)
+            {
+            printLn(i);
+            }
+        }
+        if (c=='D'){
+        printLn("descending");
+            for (int i=a; i<=b; i++)
+            {
+            printLn(b-i);
+            }
+        }
+    }
+    public static void printLn<T>(T value)
+    {
+        Console.WriteLine(value);
+    }
+    public static void print<T>(T value)
+    {
+        Console.Write(value);
+    }
+}

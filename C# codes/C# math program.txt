@@ -1,0 +1,50 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        
+        printLn(Math(5,3,'+'));
+        printLn(Math(12,3,'-'));
+        printLn(Math(4,3,'*'));
+        printLn(Math(6,3,'/'));
+        printLn(Math(15,5,'%'));
+    }
+    public static double Math(double a, double b, char c)
+    {
+        if (c == '+') { print(a+"+"+b+"=");
+        double result = a+b;
+        return result;
+        }
+        if (c == '-') { print(a+"-"+b+"=");
+        double result = a-b;
+        return result;
+        }
+        if (c == '%') { print(a+"%"+b+"=");
+        double result = a%b;
+        return result;
+        }
+        if (c == '*') { print(a+"*"+b+"=");
+        double result = a*b;
+        return result;
+        }
+        if (c == '/') { print(a+"*"+b+"=");
+        double result = a/b;
+        return result;
+        }
+        double elseresult = 0;
+        return elseresult;
+    }
+    public static void printLn<T>(T value)
+    {
+        Console.WriteLine(value);
+    }
+    public static void print<T>(T value)
+    {
+        Console.Write(value);
+    }
+}

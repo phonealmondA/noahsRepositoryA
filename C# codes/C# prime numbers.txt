@@ -1,0 +1,29 @@
+using System;
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Prime numbers from 1 to 100:");
+        for (int i = 2; i <= 100; i++)  // Start from 2 since 1 is not prime
+        {
+            if (IsPrime(i))
+            {
+                Console.WriteLine(i);
+            }
+        }
+    }
+    
+    private static bool IsPrime(int number)
+    {
+        if (number < 2) return false;
+        
+        for (int i = 2; i <= Math.Sqrt(number); i++)
+        {
+            if (number % i == 0)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+}
